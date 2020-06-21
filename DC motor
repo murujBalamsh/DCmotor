@@ -1,0 +1,46 @@
+
+int motorR_F = 5;
+int motorR_B = 6;
+
+int motorL_F = 10;
+int motorL_B = 9;
+
+void setup()
+{
+  pinMode(motorR_F , OUTPUT);
+  pinMode(motorR_B, OUTPUT);
+  pinMode(motorL_F, OUTPUT);
+  pinMode(motorL_B, OUTPUT);
+  
+}
+
+void loop()
+{
+  
+  
+  if(distance <150){
+ analogWrite(motorR_F,0);
+ analogWrite(motorL_F,0); 
+ analogWrite(motorR_B,0);
+ analogWrite(motorL_B,0); 
+ delay(5000);
+    
+ analogWrite(motorR_F,0);
+ analogWrite(motorL_F,0); 
+ analogWrite(motorR_B,255);
+ analogWrite(motorL_B,255); 
+ delay(3000); 
+    
+    
+ analogWrite(motorL_F,200);
+ analogWrite(motorL_B,0); 
+    
+ analogWrite(motorR_F,0) ;  
+ analogWrite(motorR_B,200);
+ delay(1000);  
+    
+  } 
+    
+    
+    
+}
